@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	
+	
+</head>
+<body>
+	<h1 style="text-align:center ;">ABC Tasarım Programı Kurulum ve Satış Sözleşmesi:)</h1>
+	<div>
+		<form action="result.html">
+		
+		<fieldset>
+			<legend>Sözleşme Onay</legend>
+			<input type="checkbox" name="onay" id="kutu" required>
+
+			<label for="kutu">Aşağıdaki bilgilerin doğrulugunu kabul ediyorum ve sözleşmesini onaylıyorum.</label>
+			<br>
+			<br>
+			<input type="submit" value="Formu Kaydet">
+			<input type="reset" value="Formu Temizle">	
+		</fieldset>
+
+	</div>
+	<div>
+		
+		<fieldset>
+			<legend>Kişisel Bilgiler</legend>
+			<table >
+			<tr><td style="width:200px" >Form Güvenlik ID</td><td><input type="text" name="güvenlik" placeholder="123asd,."></td></tr>
+
+			<tr><td>Ad</td><td><input type="text" name="ad" ></td></tr>
+
+			<tr><td>Soyad</td><td><input type="text" name="soyad" ></td></tr>
+
+			<tr><td>Yaş</td><td><input type="number" name="yas" min="18" max="99"></td></tr>
+
+			<tr><td>Mail Adresi</td><td><input type="email" name="mail" ></td></tr>
+
+			<tr><td>Fotoğraf Ekle</td><td><input type="file" name="ad" value="Dosya Seç" ></td></tr>
+
+			</table>
+		</fieldset>
+
+	<div>
+		
+		<fieldset>
+			<legend>Diğer Bilgiler</legend>
+			<table>
+
+			<tr><th colspan="2" style="height:30px ;">Buradaki Alanlar Mesleki Deneyimi Kapsar</th><td></td></tr>
+
+			<tr><td style="width: 250px;">Sektöre Giriş Tarihi</td><td><input type="date" name="date"></td></tr>
+
+			<tr><td rowspan="4">Sektöre Giriş</td><td><input type="radio" name="yıl" >1-5 yıl</td></tr>
+
+			<tr><td><input type="radio" name="yıl" >6-10 yıl</td></tr>
+
+			<tr><td><input type="radio" name="yıl" >11-15 yıl</td></tr>
+
+			<tr><td><input type="radio" name="yıl" >15-üzeri</td></tr>
+
+			<tr><td>Programlama Dilleri</td><td>
+
+			<select name="program_dilleri" id="prog" size="4" multiple>
+				<option value="C#">C#</option>
+				<option value="PHP">PHP</option>
+				<option value="Java">Java</option>
+				<option value="Javascript">JavaScript</option>
+				<option value="Python">Python</option>
+			</select>
+			</td></tr>
+			</table>
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Sözleşme Kopyası</legend>
+
+			<textarea name="" id="" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia neque, numquam suscipit debitis similique impedit illo dolor laboriosam laudantium saepe, nostrum iusto mollitia earum corrupti tempore? Pariatur earum adipisci officiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eum debitis consequatur fuga et nihil. Illo, in nemo qui dolorum ducimus doloribus asperiores laudantium optio debitis hic
+		    </textarea> 
+		
+			
+			
+		</fieldset>
+	</div>
+	<div>
+		
+		<fieldset>
+
+			<legend>Mail Listesi</legend>
+
+			<label for="mail">Mail Listesine Katılmak <b>İstiyorum</b></label>
+
+			<input type="radio" name="mail_secimi" id="mail">
+			<br>
+			<label for="mail1">Mail Listesine Katılmak <b>İstemiyorum</b></label>
+
+			<input type="radio" name="mail_secimi" id="mail1">
+			
+		</fieldset>
+	</div>
+</form>
+</body>
+</html>
